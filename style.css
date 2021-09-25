@@ -61,7 +61,7 @@
 }
 
 .background{
-    background: rgba(46, 45, 45, 0.7)url(/img/bg.jpg);
+    background: rgba(46, 45, 45, 0.7)url(/bg.jpg);
     background-size: cover;
     background-blend-mode: darken;
     /* height: 200px; */
