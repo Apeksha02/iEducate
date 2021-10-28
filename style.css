@@ -17,7 +17,6 @@
   body {
     overflow-x: hidden;
   }
-  
   #header {
     width: 100%;
     display: -webkit-box;
@@ -34,16 +33,16 @@
     left: 0;
     padding: 1rem 4rem;
     background: #fff;
-    /* -webkit-box-shadow: 0 .1rem .3rem #999; */
+    -webkit-box-shadow: 0 .1rem .3rem #999;
             box-shadow: 0 .1rem .3rem #999;
     z-index: 1100;
   }
   
-  .logo img {
+  #header .logo img {
     height: 3.5rem;
   }
   
-  ul {
+  #header nav ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -56,27 +55,26 @@
     margin-bottom: 0;
   }
   
-  li {
+  #header nav ul li {
     margin-right: 2rem;
   }
   
-  li a {
+  #header nav ul li a {
     color: #333;
     font-size: 2rem;
   }
   
-  li a:hover {
+  #header nav ul li a:hover {
     text-decoration: none;
     color: #00B894;
   }
   
-  .fa-bars {
+  #header .fa-bars {
     font-size: 3rem;
     color: #333;
     cursor: pointer;
     display: none;
   }
-  
   #home {
     
     min-height: 100vh;
@@ -101,6 +99,7 @@
   }
   
   #home .content h2 {
+    padding-top: 15%;
     font-size: 5rem;
     color: #00B894;
   }
@@ -415,6 +414,8 @@
 }
 
   #contact {
+  
+    font-family: 'Exo 2', sans-serif;
     display: -ms-grid;
     display: grid;
     place-items: center;
@@ -444,7 +445,7 @@
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
     height: .3rem;
-    width: 60%;
+    width: 70%;
     border-radius: 5rem;
     background: #333;
   }
@@ -563,10 +564,10 @@
     html {
       font-size: 50%;
     }
-    .fa-bars {
+    #header .fa-bars {
       display: block;
     }
-    nav {
+    #header nav {
       position: fixed;
       top: -120%;
       left: 0;
@@ -574,7 +575,7 @@
       width: 100vw;
       background: #fff;
     }
-    ul {
+    #header nav ul {
       height: 100%;
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
@@ -584,13 +585,13 @@
           -ms-flex-pack: center;
               justify-content: center;
     }
-    li {
+    #header nav ul li {
       margin: 2rem 0;
     }
-    li a {
+    #header nav ul li a {
       font-size: 3rem;
     }
-    .nav-toggle {
+    #header .nav-toggle {
       top: 5.6rem;
     }
     #home {

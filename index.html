@@ -271,118 +271,32 @@
         delay:500
       });
   </script>
+  <script>
+    $(document).ready(function(){
+
+$('.fa-bars').click(function(){
+  $(this).toggleClass('fa-times');
+  $('nav').toggleClass('nav-toggle');
+});
+
+$(window).on('load scroll',function(){
+
+if($(window).scrollTop() > 20){
+
+$('#header').css('top','0');
+
+$('.fa-bars').removeClass('fa-times');
+$('nav').removeClass('nav-toggle');
+
+}else{
+$('#header').css('top','-100%');
+}
+}
+);
+
+});
+  </script>
   
   </body> 
-
-
-<!-- <body>
-    <nav class="navbar h-nav-resp">
-        <ul class="nav-list v-class-resp">
-            <div class="logo"><img src="logo.PNG" alt="logo"></div>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-        <div class="rightNav v-class-resp">
-            <input type="text" name="search" id="search">
-            <button class="btn btn-sm">Search</button>
-        </div>
-        <div class="burger">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </div>
-    </nav>
-
-    <section id="home"  class="background firstsection">
-        <div class="box-main">
-            <div class="firsthalf">
-                <p class="text-big">The future of Education is here</p>
-                <p class="text-small">In this world of 7 billion people we need to educate all of them. This is the
-                    future of an educated
-                    world and we proud to say that the future of Education is here.
-                </p>
-                <div class="buttons">
-                    <button class="btn">Subscribe</button>
-                    <button class="btn">Watch video</button>
-                </div>
-            </div>
-            <div class="secondhalf">
-                <img src="education.png" alt="logo">
-            </div>
-        </div>
-    </section>
-    <section id="services" class="secright">
-        <div class="paras">
-            <p class="sectiontag text-big">The end of Illiteracy is here</p>
-            <p class="sectionsubtag text-small">Individuals with low levels of literacy are more likely to experience
-                poorer employment
-                opportunities and outcomes and lower income. As a result, they often face welfare dependency, low
-                self-esteem, and higher levels of crime. Illiteracy has many interrelated causes and effects.... Thus,
-                one
-                could easily argue that the increase in literacy is directly correlated with positive economic growth.
-                In the past, education
-                was not required, but in this day, universal education is becoming a necessity.</p>
-        </div>
-        <div class="thumbnail"><img src="literacy.png" alt=""></div>
-    </section>
-
-    <section class="secleft">
-        <div class="paras">
-            <p class="sectiontag text-big">Transforming Education</p>
-            <p class="sectionsubtag text-small">Technology ushers in fundamental structural changes that can be integral
-                to achieving significant improvements in productivity. Used to support both teaching and learning,
-                technology infuses classrooms with digital learning tools, such as computers and hand held devices;
-                expands course offerings, experiences, and learning materials; supports learning 24 hours a day, 7 days
-                a week; builds 21st century skills; increases student engagement and motivation; and accelerates
-                learning. Technology also has the power to transform teaching by ushering in a new model of connected
-                teaching. This model links teachers to their students and to professional content, resources, and
-                systems to help them improve their own instruction and personalize learning.<br>
-
-                Online learning opportunities and the use of open educational resources and other technologies can
-                increase educational productivity by accelerating the rate of learning; reducing costs associated with
-                instructional materials or program delivery; and better utilizing teacher time.</p>
-        </div>
-        <div class="thumbnail"><img src="transformation.png" alt=""></div>
-    </section>
-
-    <section class="secright">
-        <div class="paras">
-            <p class="sectiontag text-big">Lets Grow Together</p>
-            <p class="sectionsubtag text-small">Our goal is to help each and every individuals to gain personal and professional skills in
-                the area of Technological development. The purpose is to provide a structure through which students may
-                exercise their right to freely associate in pursuit of a common purpose or goal that enhances community
-                at iEducate - Transforming Online Education.</p>
-        </div>
-        <div class="thumbnail"><img src="grow.png" alt=""></div>
-    </section>
-    <section id="contact" class="contact">
-        <h1 class="text-center">Contact Us</h1>
-
-        <div class="form">
-            <input type="text" name="name" placeholder="Enter your name">
-            <input type="email" name="email" placeholder="Enter your Email">
-            <input type="text" name="phone" placeholder="Enter your Phone no.">
-            <textarea name="text" id="text" cols="47" rows="6" placeholder="Ellaborate your concern"></textarea>
-            <button class="btn btn-dark">Submit</button>
-        </div>
-
-    </section>
-    <footer class="text-footer">
-
-        <div>Copyright &copy; 2021 www.iEducate.com- All rights reserved <br>
-            Designed & Developed by Apeksha.</div>
-        <div class="icon">
-            <a class="l" href="https://www.linkedin.com/in/apeksha-bhosale-9676b8203/"><i
-                    class="fa fa-linkedin"></i></a>
-            <a class="i" href="https://www.instagram.com/apeksha._02/?utm_medium=copy_link"><i
-                    class="fa fa-instagram"></i></a>
-            <a class="t" href="https://twitter.com/ApekshaBhosale7?s=08"><i class="fa fa-twitter"></i></a>
-        </div>
-
-    </footer>
-    <script src="/js/resp.js"></script>
-</body> -->
 
 </html>
